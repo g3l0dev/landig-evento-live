@@ -1,7 +1,6 @@
 ---
 const { title, description, image } = Astro.props;
-import Footer from "@components/Footer.astro";
-import Header from "@components/Header.astro";
+import { Footer, Header } from "@components";
 import "@fontsource-variable/public-sans";
 ---
 
@@ -104,7 +103,7 @@ import "@fontsource-variable/public-sans";
     font-size: 100%;
     line-height: 1.4em;
     font-family: "Public Sans Variable", sans-serif;
-    background: url('/images/cover-cx.webp') fixed center;
+    background: url("/images/cover-cx.webp") fixed center;
     background-size: cover;
     background-repeat: no-repeat;
   }
@@ -124,10 +123,10 @@ import "@fontsource-variable/public-sans";
     <title>{title}</title>
   </head>
   <body>
-    <Header/>
+    <Header />
     <main>
       <slot />
     </main>
-    <Footer/>
+    <Footer />
   </body>
 </html>
