@@ -1,0 +1,39 @@
+---
+import { Icon } from "astro-icon/components";
+
+const today = new Date();
+---
+
+<footer>
+  <div>
+    <a href="">
+      <Icon name="facebook" />
+    </a>
+    <a href="">
+      <Icon name="instagram" />
+    </a>
+    <a href="">
+      <Icon name="youtube" />
+    </a>
+  </div>
+  <small
+    >&copy; {today.getFullYear()} XKALE - Todos los derechos reservados
+  </small>
+</footer>
+
+<style>
+  footer {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: #000;
+    padding-block: 1rem; 
+  }
+  div {
+    margin-block: 0.83rem;
+    display: flex;
+    column-gap: 1rem;
+  }
+</style>
