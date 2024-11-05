@@ -1,0 +1,28 @@
+---
+interface props {
+  class?: string;
+}
+
+const { class: className, ...rest } = Astro.props;
+---
+<section class={`${className} section`} {...rest}>
+  <slot />
+</section>
+
+<style>
+  .section {
+    padding: 1rem;
+  }
+  @media (width >= 1280px) {
+    .section {
+      padding-inline: 8rem;
+      padding-block: 2rem;
+    }
+  }
+  @media (width >= 1546px){
+    .section {
+      padding-inline: 18rem;
+      padding-block: 2rem;
+    }
+  }
+</style>

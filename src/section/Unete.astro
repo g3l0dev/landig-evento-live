@@ -1,0 +1,73 @@
+---
+import { CardLideres, Container } from "@components";
+---
+
+<Container class="container">
+  <h2>Únete a esta conversación de líderes en cx en exclusiva para México</h2>
+  <ul>
+    <CardLideres
+      title="La caída en la contactabilidad de México"
+      description="México enfrenta un problema creciente en sus contact centers con la caída de la contactabilidad. Solo el 13% de las empresas tienen plataformas de CX integradas, lo que impide una comunicación eficiente con sus clientes"
+      subtitle="En este evento, descubre cómo superar este obstáculo."
+    />
+    <CardLideres
+      title="El impacto de herramientas de bloqueo de llamadas y cómo desafiarlo"
+      description="Herramientas que están bloqueando la comunicación con los clientes, impactando las ventas y la retención."
+      subtitle="Mauricio Giraldo compartirá estrategias de vanguardia para enfrentar esta barrera tecnológica y recuperar la eficiencia en  las interacciones"
+    />
+    <CardLideres
+      title="Falta de integración"
+      description="Muchas empresas en México aún operan con soluciones fragmentadas que no permiten una gestión de datos eficiente."
+      subtitle="Aprenderás cómo las empresas que implementan soluciones integrales de CX y IA logran una reducción de costos operativos de hasta un 30%"
+    />
+    <CardLideres
+      title="Cómo la IA puede mejorar la experiencia del cliente"
+      description="La IA es la clave para mejorar la personalización y contactabilidad en tiempos real. Descubre cómo tu empresa puede usar IA para optimizar la experiencia del cliente, con ejemplos de cómo esta tecnología ha transformado empresas en diferentes sectores."
+    />
+    <CardLideres
+      title="La orquestación de canales para un CX unificado"
+      description="Los contact centers que no conectan todos sus canales enfrentan problemas de eficiencia y satisfacción del cliente. Te mostramos cómo la orquestación de canales permite una experiencia unificada y cómo las empresas en México pueden optimizar sus journeys de cliente."
+    />
+    <CardLideres
+      title="Transformación digital y el futuro de CX en México"
+      description="Las empresas mexicanas deben prepararse para el futuro del CX adoptando tecnologías emergentes como plataformas en la nube y soluciones IA."
+      subtitle="Este evento te mostrará cómo prepararte para la transformación digital sin afectar tus operaciones diarias."
+    />
+  </ul>
+</Container>
+
+<style>
+  .container h2 {
+    color: var(--verde-planta);
+    font-size: 1.5em;
+    margin-block: 0.83em;
+    font-weight: bold;
+    text-wrap: balance;
+    line-height: 1.4;
+    text-align: center;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+  }
+  ul {
+    list-style: none
+    min-height: 403px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 1rem;
+  }
+  @media (width >= 1280px) {
+    ul {
+      list-style: none;
+      width: 1000px;
+    }
+  }
+  @media (width >= 1546px) {
+    ul {
+      list-style: none;
+      width: 100%;
+      grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+    }
+  }
+</style>

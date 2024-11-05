@@ -1,0 +1,46 @@
+---
+const { title, description, subtitle } = Astro.props;
+---
+
+<li>
+  <article>
+    <h3>{title}</h3>
+    <p>{description}</p>
+    <h5>{subtitle}</h5>
+  </article>
+</li>
+
+<style>
+  article {
+    background-color: var(--azul-cielo);
+    padding: 1rem;
+    border-radius: 0.5rem;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    height: 100%;
+    color: white;
+    text-align: center;
+    box-shadow: 0px 0px 20px 3px rgba(0, 0, 0, 0.50);
+  }
+  h3 {
+    display: block;
+    font-size: 1.17em;
+    margin-block: 0.83em;
+    font-weight: bold;
+    text-wrap: balance;
+    line-height: 1.4;
+  }
+
+  p {
+    display: block;
+    margin-block: 1em;
+  }
+  h5 {
+    display: block;
+    font: size 0.83em;
+    margin-block: 1.67em;
+    font-weight: bold;
+    text-wrap: balance;
+    line-height: 1.4;
+  }
+</style>
