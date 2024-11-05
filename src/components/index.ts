@@ -4,5 +4,6 @@ import LiveDay from './LiveDay.astro'
 import Seo from './Seo.astro'
 import Container from './Container.astro'
 import CardLideres from './CardLideres.astro'
+import CardInfo from './CardInfo.astro'
 
-export { Header, Footer, LiveDay, Seo, Container, CardLideres }
+export { Header, Footer, LiveDay, Seo, Container, CardLideres, CardInfo }

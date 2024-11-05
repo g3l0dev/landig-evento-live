@@ -1,0 +1,24 @@
+---
+interface Props {
+  class?: string;
+}
+const { class: className, ...rest } = Astro.props;
+---
+
+<li class={`${className}`} {...rest}>
+  <p>
+    <slot />
+  </p>
+</li>
+
+<style>
+  li {
+    background-color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    position: relative;
+  }
+</style>
