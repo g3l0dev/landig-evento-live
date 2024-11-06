@@ -1,0 +1,158 @@
+---
+import { Container } from "@components";
+---
+
+<Container class="container">
+  <h2>Lideres en el CX</h2>
+  <div class="lideres">
+    <div class="mauricio">
+      <img src="/images/mauricio.webp" alt="Mauricio Giraldo" />
+      <article>
+        <h3>Mauricio Giraldo</h3>
+        <small>Director de Consultoría en Customer Experience en Genesys.</small
+        >
+        <p>
+          Experto en tecnología de CX e IA, ha liderado proyectos de
+          transformación digital en LATAM, optimizando operaciones en banca,
+          retail y contact centers.
+        </p>
+      </article>
+    </div>
+
+    <div class="francisco">
+      <article>
+        <h3>Francisco Soria</h3>
+        <small>Director comercial en Xkale</small>
+        <p>
+          Especialista en soluciones de CX y eficiencia operativa, ha ayudado a
+          empresas de diferentes industrias a mejorar su contactabilidad y
+          reducir costos.
+        </p>
+      </article>
+      <img src="/images/francisco-soria.webp" alt="francisco soria" />
+    </div>
+  </div>
+</Container>
+
+<style>
+  h2{
+    text-align: center;
+    margin-block: 1.25rem;
+    color: var(--verde-planta);
+    font-weight: bold;
+    display: block;
+    text-wrap: balance;
+    font-size: 1.5rem;
+  }
+  .lideres {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.25rem;
+  }
+  /* mauricio giraldo */
+  .mauricio {
+    display: flex;
+    position: relative;
+  }
+  .mauricio article {
+    position: absolute;
+    top: 45%;
+    background: white;
+    padding: 1rem;
+    border-bottom: 10px solid var(--verde-planta);
+  }
+  .mauricio article h3 {
+    font-size: 1.17em;
+    margin-block: 0.83em;
+    color: var(--verde-planta);
+    font-weight: bold;
+    display: block;
+    text-wrap: balance;
+  }
+  .mauricio article small {
+    font-weight: 700;
+  }
+
+  .mauricio article p {
+    display: block;
+    margin-block-start: 1em;
+    line-height: 1.4;
+    text-wrap: pretty;
+  }
+  .mauricio img {
+    width: auto;
+    height: 500px;
+    /* filter: drop-shadow(0 0 20px rgba(0, 0, 0, 0.5)); */
+    mask-image: linear-gradient(to bottom, black 50%, transparent 100%);
+  }
+
+  /* francisco soria */
+  .francisco {
+    display: flex;
+    position: relative;
+  }
+  .francisco article {
+    position: absolute;
+    top: 45%;
+    background-color: white;
+    padding: 1rem;
+    border-bottom: 10px solid var(--verde-planta);
+  }
+  .francisco article h3 {
+    font-size: 1.17em;
+    margin-block: 0.83em;
+    color: var(--verde-planta);
+    font-weight: bold;
+    display: block;
+    text-wrap: balance;
+  }
+  .francisco article small {
+    font-weight: 700;
+  }
+
+  .francisco article p {
+    display: block;
+    margin-block-start: 1em;
+    line-height: 1.4;
+    text-wrap: pretty;
+  }
+  .francisco img {
+    width: auto;
+    height: 500px;
+    /* filter: drop-shadow(0 0 20px rgba(0, 0, 0, 0.5)); */
+    mask-image: linear-gradient(to bottom, black 50%, transparent 100%);
+  }
+
+  /* meiaquerys Mauricio */
+  @media (width >= 1280px) {
+    .mauricio {
+      display: flex;
+      position: relative;
+      color: white;
+    }
+    .mauricio article {
+      position: static;
+      top: 0;
+      max-height: max-content;
+      background: none;
+      padding: 1rem;
+      border-bottom: 5px solid var(--verde-planta);
+    }
+  }
+
+  @media (width >= 1280px) {
+    .francisco {
+      display: flex;
+      position: relative;
+      color: white;
+    }
+    .francisco article {
+      position: static;
+      top: 0;
+      max-height: max-content;
+      background: none;
+      padding: 1rem;
+      border-bottom: 5px solid var(--verde-planta);
+    }
+  }
+</style>
