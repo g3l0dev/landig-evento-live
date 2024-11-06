@@ -1,9 +1,14 @@
 ---
 import { Container } from "@components";
+import { Icon } from "astro-icon/components";
 ---
 
 <Container class="container-form" id="form">
   <div>
+    <div class="logos">
+      <Icon name="xkale-logo" class="xkale"/>
+      <Icon name="genesys" class="genesys"/>
+    </div>
     <h4>
       Reserva tu lugar y mejora la contactabilidad de tu contact center con IA
     </h4>
@@ -26,6 +31,17 @@ import { Container } from "@components";
 </Container>
 
 <style>
+  .logos {
+    display: flex;
+    align-items: center;
+    column-gap: 1.25rem;
+  }
+  .logos .xkale {
+    font-size: 3rem;
+  }
+  .logos .genesys {
+    font-size: 1.5rem;
+  }
   .container-form {
     color: white;
     background-color: black;
