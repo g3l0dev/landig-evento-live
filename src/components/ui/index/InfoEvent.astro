@@ -1,0 +1,117 @@
+---
+import Section from "@components/Section.astro";
+import TrendingUp from "@assets/icons/trending-up.svg";
+import Phone from "@assets/icons/phone.svg";
+import Time from "@assets/icons/time.svg";
+import CheckRegular from "@assets/icons/check-regular.svg";
+---
+
+<Section>
+  <h2 class="text-verde-xkale text-center">
+    ¿Qué puedes estar haciendo diferente desde ahora?
+  </h2>
+  <section class="flex flex-col items-center">
+    <p class="text-white-xkale w-full max-w-2xl text-center">
+      Mientras tú resuelves lo urgente, otros ya están escalando:
+    </p>
+    <ul class="grid grid-cols-1 md:grid-cols-3 gap-4 w-full mb-4">
+      <li
+        class="flex items-center gap-x-4 bg-black-xkale/15 backdrop-blur-sm rounded-lg p-6"
+      >
+        <CheckRegular class="size-8 text-verde-xkale" />
+        <p class="text-white-xkale mb-0">
+          Personalizan la atención en tiempo real con IA
+        </p>
+      </li>
+      <li
+        class="flex items-center gap-x-4 bg-black-xkale/15 backdrop-blur-sm rounded-lg p-6"
+      >
+        <CheckRegular class="size-8 text-verde-xkale" />
+        <p class="text-white-xkale mb-0">
+          Automatizan tareas repetitivas y alivian la carga operativa
+        </p>
+      </li>
+      <li
+        class="flex items-center gap-x-4 bg-black-xkale/15 backdrop-blur-sm rounded-lg p-6"
+      >
+        <CheckRegular class="size-8 text-verde-xkale" />
+        <p class="text-white-xkale mb-0">
+          Optimizan procesos para un servicio 24/7
+        </p>
+      </li>
+    </ul>
+    <p class="text-white-xkale w-full max-w-2xl text-center">
+      Esto se traduce en:
+    </p>
+    <ul class="grid grid-cols-1 md:grid-cols-3 gap-4 w-full mb-8">
+      <li
+        class="flex items-center gap-x-4 bg-black-xkale/15 backdrop-blur-sm rounded-lg p-6"
+      >
+        <CheckRegular class="size-8 text-verde-xkale" />
+        <p class="text-white-xkale mb-0">Clientes más satisfechos y fieles</p>
+      </li>
+      <li
+        class="flex items-center gap-x-4 bg-black-xkale/15 backdrop-blur-sm rounded-lg p-6"
+      >
+        <CheckRegular class="size-8 text-verde-xkale" />
+        <p class="text-white-xkale mb-0">Equipos más eficientes</p>
+      </li>
+      <li
+        class="flex items-center gap-x-4 bg-black-xkale/15 backdrop-blur-sm rounded-lg p-6"
+      >
+        <CheckRegular class="size-8 text-verde-xkale" />
+        <p class="text-white-xkale mb-0">Mejores resultados comerciales</p>
+      </li>
+    </ul>
+  </section>
+  <!-- sifras -->
+  <section class="flex flex-col items-center">
+    <p class="text-white-xkale w-full max-w-2xl text-center">
+      La inteligencia artificial ya no es una promesa: es una necesidad para
+      operar a la altura del mercado actual.
+    </p>
+    <p class="text-white-xkale w-full max-w-2xl text-center">
+      Empresas que ya aplican estas estrategias están viendo cambios
+      significativos:
+    </p>
+
+    <ul class="grid grid-cols-1 md:grid-cols-3 gap-4 w-full">
+      <li
+        class="bg-black-xkale/15 backdrop-blur-md rounded-lg p-6 flex flex-col items-center text-center relative overflow-hidden"
+      >
+        <div
+          class="absolute top-0 right-0 bg-verde-xkale text-black-xkale font-bold py-1 px-3 rounded-bl-lg text-xl"
+        >
+          +90%
+        </div>
+        <TrendingUp class="size-10 mb-3 text-verde-xkale" />
+        <p class="text-white-xkale mb-0.5">Seguros del pichincha</p>
+        <p class="text-white-xkale/50 mb-0">en nivel de servicio</p>
+      </li>
+      <li
+        class="bg-black-xkale/15 backdrop-blur-md rounded-lg p-6 flex flex-col items-center text-center relative overflow-hidden"
+      >
+        <div
+          class="absolute top-0 right-0 bg-verde-xkale text-black-xkale font-bold py-1 px-3 rounded-bl-lg text-xl"
+        >
+          +15%
+        </div>
+        <Phone class="size-10 mb-3 text-verde-xkale" />
+        <p class="text-white-xkale mb-0.5">Aseguradora del Sur</p>
+        <p class="text-white-xkale/50 mb-0">en contactabilidad</p>
+      </li>
+      <li
+        class="bg-black-xkale/15 backdrop-blur-md rounded-lg p-6 flex flex-col items-center text-center relative overflow-hidden"
+      >
+        <div
+          class="absolute top-0 right-0 bg-verde-xkale text-black-xkale font-bold py-1 px-3 rounded-bl-lg text-xl"
+        >
+          -30%
+        </div>
+        <Time class="size-10 mb-3 text-verde-xkale" />
+        <p class="text-white-xkale mb-0.5">Seguros Suárez</p>
+        <p class="text-white-xkale/50 mb-0">en carga operativa</p>
+      </li>
+    </ul>
+  </section>
+</Section>

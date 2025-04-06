@@ -1,0 +1,104 @@
+---
+import Section from "@components/Section.astro";
+import Calendar from "@assets/icons/calendar.svg";
+import Time from "@assets/icons/time.svg";
+
+const SPEAKERS = [
+  {
+    id: "francisco-soria",
+    name: "Francisco Soria",
+    title: "Director comercial",
+    empresa: "Xkale",
+    description: "Impulsando eficiencia en contactabilidad en México",
+  },
+  {
+    id: "mauricio-giraldo",
+    name: "Mauricio Giraldo",
+    title: "Director de Consultoría CX",
+    empresa: "Genesys",
+    description: "Experto en IA aplicada a contact centers en LATAM",
+  },
+];
+
+const eventInfo = {
+  date: "7 de mayo, 2025",
+  time: "16:00 P.M. mex",
+};
+---
+
+<Section>
+  <h2 class="text-verde-xkale text-center">Voceros del evento</h2>
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-8 place-items-center">
+    <article class="flex flex-col w-full justify-center items-center">
+      <img
+        src={`/images/${SPEAKERS[1].id}.webp`}
+        alt={SPEAKERS[1].name}
+        class="h-[400px] [mask-image:linear-gradient(black_80%,_transparent)]"
+      />
+      <div
+        class="w-full bottom-0 p-6 bg-black-xkale/15 backdrop-blur-sm relative border-1 border-verde-xkale rounded-xl"
+      >
+        <div
+          class="bg-verde-xkale absolute -top-[0.5rem] -translate-y-[0.5rem] left-[50%] px-4 py-1 rounded-full w-full max-w-max"
+        >
+          <span class="text-black-xkale italic">Invitado especial</span>
+        </div>
+        <h3 class="text-verde-xkale">{SPEAKERS[1].name}</h3>
+        <h6 class="mb-0.5 text-white-xkale/50 italic">{SPEAKERS[1].title}</h6>
+        <h6 class="text-white-xkale/50 italic">{SPEAKERS[1].empresa}</h6>
+        <p class="text-white-xkale mb-0">{SPEAKERS[1].description}</p>
+      </div>
+    </article>
+
+    <div
+      class="flex flex-col space-y-4 bg-black-xkale/15 backdrop-blur-sm rounded-xl p-6 w-full items-center justify-center"
+    >
+      <div class="flex items-center gap-2">
+        <Calendar class="text-verde-xkale" />
+        <span class="text-white-xkale">{eventInfo.date}</span>
+      </div>
+      <div class="flex items-center gap-2">
+        <Time class="text-verde-xkale size-6" />
+        <span class="text-white-xkale">{eventInfo.time}</span>
+      </div>
+    </div>
+
+    <article class="flex flex-col w-full justify-center items-center">
+      <img
+        src={`/images/${SPEAKERS[0].id}.webp`}
+        alt={SPEAKERS[0].name}
+        class="h-[400px] [mask-image:linear-gradient(black_80%,_transparent)]"
+      />
+      <div
+        class="w-full bottom-0 p-6 bg-black-xkale/15 backdrop-blur-sm relative border-1 border-verde-xkale rounded-xl"
+      >
+        <div
+          class="bg-verde-xkale absolute -top-[0.5rem] -translate-y-[0.5rem] left-[70%] px-4 py-1 rounded-full w-full max-w-max"
+        >
+          <span class="text-black-xkale italic">Host</span>
+        </div>
+        <h3 class="text-verde-xkale">{SPEAKERS[0].name}</h3>
+        <h6 class="mb-0.5 text-white-xkale/50 italic">{SPEAKERS[0].title}</h6>
+        <h6 class="text-white-xkale/50 italic">{SPEAKERS[0].empresa}</h6>
+        <p class="text-white-xkale mb-0">{SPEAKERS[0].description}</p>
+      </div>
+    </article>
+    <!-- {
+      SPEAKERS.map(({ id, name, title, description, empresa }) => (
+        <article class="flex flex-col w-full justify-center items-center ">
+          <img
+            src={`/images/${id}.webp`}
+            alt={name}
+            class="h-[400px] [mask-image:linear-gradient(black_80%,_transparent)]"
+          />
+          <div class=" w-full bottom-0 p-6 bg-black-xkale/15 backdrop-blur-sm">
+            <h3 class="text-verde-xkale">{name}</h3>
+            <h6 class="mb-0.5 text-white-xkale/50 ">{title}</h6>
+            <h6 class="text-white-xkale/50">{empresa}</h6>
+            <p class="text-white-xkale">{description}</p>
+          </div>
+        </article>
+      ))
+    } -->
+  </div>
+</Section>

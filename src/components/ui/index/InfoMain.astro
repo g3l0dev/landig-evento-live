@@ -1,0 +1,132 @@
+---
+import Section from "@components/Section.astro";
+import PhoneSlash from "@assets/icons/phone-slash.svg";
+import Users from "@assets/icons/users.svg";
+import UserX from "@assets/icons/user-x.svg";
+import TrendingDown from "@assets/icons/trending-down.svg";
+import CheckRegular from "@assets/icons/check-regular.svg";
+import Calendar from "@assets/icons/calendar.svg";
+import Time from "@assets/icons/time.svg";
+import Youtube from "@assets/icons/youtube.svg";
+---
+
+<Section>
+  <section class="flex flex-col items-center">
+    <h2 class="text-verde-xkale text-center">¿Por qué asistir?</h2>
+    <p class="text-white-xkale w-full max-w-2xl text-center">
+      Genesys y Xkale te invitan a un encuentro estratégico para líderes y
+      tomadores de decisiones que necesitan transformar sus resultados.
+    </p>
+    <p class="text-white-xkale w-full max-w-2xl text-center">
+      De la mano de Genesys, líder global en experiencia del cliente, conocerás
+      tácticas comprobadas que ya están impactando los indipadores clave de
+      empresas en la región.
+    </p>
+    <p class="text-white-xkale w-full max-w-2xl text-center">
+      México, como hub estratégico de servicios de atención y back office para
+      LATAM y mercados desarrollados, enfrenta una transformación urgente. La
+      baja contactabilidad y la falta de integración tecnológica ya están
+      comprometiendo los resultados.
+    </p>
+  </section>
+  <!-- se queda -->
+  <section class="flex flex-col items-center mb-8">
+    <h2 class="text-verde-xkale">
+      El costo de no actuar a tiempo: ¿te suena familiar?
+    </h2>
+    <div
+      class="bg-black-xkale/15 backdrop-blur-md rounded-md p-4 w-full max-w-2xl mb-8"
+    >
+      <p class="text-white-xkale text-center text-lg">
+        En México, solo el <span class="font-bod text-verde-xkale">13%</span> de
+        las empresas han integrado plataformas modernas de CX. El resto enfrenta
+        diariamente:
+      </p>
+    </div>
+    <div
+      class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 w-full mb-8"
+    >
+      <div
+        class="bg-black-xkale/15 backdrop-blur-sm rounded-lg p-6 flex w-full
+         flex-col items-center text-center"
+      >
+        <PhoneSlash class="size-10 text-verde-xkale mb-3" />
+        <p class="text-white-xkale">Bloqueo de llamadas</p>
+      </div>
+      <div
+        class="bg-black-xkale/15 backdrop-blur-sm rounded-lg p-6 flex flex-col items-center text-center"
+      >
+        <UserX class="size-10 text-verde-xkale mb-3" />
+        <p class="text-white-xkale">Clientes que no responden</p>
+      </div>
+      <div
+        class="bg-black-xkale/15 backdrop-blur-sm rounded-lg p-6 flex flex-col items-center text-center"
+      >
+        <Users class="size-10 text-verde-xkale mb-3" />
+        <p class="text-white-xkale">Equipos saturados</p>
+      </div>
+      <div
+        class="bg-black-xkale/15 backdrop-blur-sm rounded-lg p-6 flex flex-col items-center text-center"
+      >
+        <TrendingDown class="size-10 text-verde-xkale mb-3" />
+        <p class="text-white-xkale">Equipos saturados</p>
+      </div>
+    </div>
+
+    <p class="text-white-xkale w-full max-w-2xl text-center">
+      ¿El resultado? Ventas estancadas, cobranza ineficiente y niveles de
+      servicio por debajo del estándar.
+    </p>
+    <p class="text-white-xkale w-full max-w-2xl text-center">
+      Y lo más preocupante: se pierden oportunidades de negocio y se incrementa
+      la rotación de clientes por una experiencia desconectada.
+    </p>
+  </section>
+  <!-- detalles de evento -->
+  <section class="flex flex-col items-center">
+    <h2 class="text-verde-xkale text-center">Detalles del evento</h2>
+    <div
+      class="text-white-xkale w-full max-w-2xl mx-auto bg-black-xkale/15 backdrop-blur-md rounded-xl p-6 mb-8"
+    >
+      <!-- fecha -->
+      <div class="flex items-center space-x-4">
+        <div class="bg-verde-xkale/25 rounded-full p-3">
+          <Calendar class="size-6 text-verde-xkale" />
+        </div>
+        <div>
+          <p class="mb-0.5"><small>Fecha</small></p>
+          <p>7 de mayo</p>
+        </div>
+      </div>
+      <!-- hora -->
+      <div class="flex items-center space-x-4">
+        <div class="bg-verde-xkale/25 rounded-full p-3">
+          <Time class="size-6 text-verde-xkale" />
+        </div>
+        <div>
+          <p class="mb-0.5"><small>Hora</small></p>
+          <p>16:00 P.M. mex</p>
+        </div>
+      </div>
+      <!-- ubicación -->
+      <div class="flex items-center space-x-4">
+        <div class="bg-verde-xkale/25 rounded-full p-3">
+          <Youtube class="size-6 text-verde-xkale" />
+        </div>
+        <a
+          href="https://www.youtube.com/@xkale_"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <p class="mb-0.5"><small>Ubicación</small></p>
+          <p>En vivo por YouTube</p>
+        </a>
+      </div>
+    </div>
+    <a
+      href="#form"
+      class="bg-verde-xkale text-black-xkale inline-block font-bold px-4 py-2"
+      >¡Reservar mi lugar!</a
+    >
+  </section>
+</Section>

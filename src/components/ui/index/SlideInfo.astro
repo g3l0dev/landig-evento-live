@@ -1,0 +1,373 @@
+---
+import Section from "@components/Section.astro";
+import Users from "@assets/icons/users.svg";
+import Zap from "@assets/icons/zap.svg";
+import PieChart from "@assets/icons/pie-chart.svg";
+import CheckRegular from "@assets/icons/check-regular.svg";
+import Calendar from "@assets/icons/calendar.svg";
+import Time from "@assets/icons/time.svg";
+import Youtube from "@assets/icons/youtube.svg";
+import Micro from "@assets/icons/micro.svg";
+import Lock from "@assets/icons/lock.svg";
+import Tiket from "@assets/icons/tiket.svg";
+import TrendingDown from "@assets/icons/trending-down.svg";
+---
+
+<Section>
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+    <div class="swiper swiper-info">
+      <div class="swiper-wrapper">
+        <!-- slide-1 -->
+        <div class="swiper-slide">
+          <article
+            class="text-white-xkale w-full rounded-xl overflow-hidden h-full bg-black-xkale/15 backdrop-blur-md"
+          >
+            <div class="p-4 bg-gradient-to-r from-red-600 to-red-700">
+              <div class="flex items-center space-x-4">
+                <TrendingDown class="size-5" />
+                <h3 class="mb-0.5">Dolor profundo</h3>
+              </div>
+            </div>
+            <div class="p-4">
+              <div class="m-1 rounded-xl bg-red-900/20 p-2">
+                <p class="mb-0.5 text-red-400">
+                  Solo el 13% de las empresas en México tienen plataformas de CX
+                  integradas.
+                </p>
+              </div>
+              <p>El resto enfrenta:</p>
+              <ul class="space-y-2">
+                <li class="flex items-center gap-x-3.5">
+                  <div
+                    class="size-5 rounded-full bg-red-900/30 flex items-center justify-center flex-shrink-0 mt-0.5"
+                  >
+                    <span class="text-red-400 text-sm">•</span>
+                  </div>
+                  <p class="mb-0">Respuestas lentas</p>
+                </li>
+                <li class="flex items-center gap-x-3.5">
+                  <div
+                    class="size-5 rounded-full bg-red-900/30 flex items-center justify-center flex-shrink-0 mt-0.5"
+                  >
+                    <span class="text-red-400 text-sm">•</span>
+                  </div>
+                  <p class="mb-0">Clientes frustrados</p>
+                </li>
+                <li class="flex items-center gap-x-3.5">
+                  <div
+                    class="size-5 rounded-full bg-red-900/30 flex items-center justify-center flex-shrink-0 mt-0.5"
+                  >
+                    <span class="text-red-400 text-sm">•</span>
+                  </div>
+                  <p class="mb-0">Operaciones fragmentadas</p>
+                </li>
+                <li class="flex items-center gap-x-3.5">
+                  <div
+                    class="size-5 rounded-full bg-red-900/30 flex items-center justify-center flex-shrink-0 mt-0.5"
+                  >
+                    <span class="text-red-400 text-sm">•</span>
+                  </div>
+                  <p class="mb-0">Costos que no paran de subir</p>
+                </li>
+                <li class="flex items-center gap-x-3.5">
+                  <div
+                    class="size-5 rounded-full bg-red-900/30 flex items-center justify-center flex-shrink-0 mt-0.5"
+                  >
+                    <span class="text-red-400 text-sm">•</span>
+                  </div>
+                  <p class="mb-0">Respuestas lentas</p>
+                </li>
+              </ul>
+            </div>
+          </article>
+        </div>
+        <!-- slide 2-->
+        <div class="swiper-slide">
+          <article
+            class="text-white-xkale w-full rounded-xl overflow-hidden bg-black-xkale/15 backdrop-blur-md h-full"
+          >
+            <div class="bg-gradient-to-r from-amber-600 to-amber-700 px-4 py-2">
+              <div class="flex items-center space-x-4">
+                <Users />
+                <h3 class="mb-1">Consecuencias</h3>
+              </div>
+            </div>
+            <div class="p-4">
+              <div class="bg-amber-900/20 py-2 px-4 rounded-xl mb-4">
+                <p class="mb-0 text-amber-400">
+                  😓 Y lo peor es que tus competidores ya están resolviendo
+                  esto.
+                </p>
+              </div>
+              <p>
+                Mientras tu equipo batalla con lo básico, otros están usando IA
+                para:
+              </p>
+              <ul class="space-y-4">
+                <li class="flex items-center space-x-4">
+                  <div
+                    class="size-5 rounded-full bg-amber-900/30 flex items-center justify-center flex-shrink-0 mt-0.5"
+                  >
+                    <span class="text-amber-400 text-xs">•</span>
+                  </div>
+                  <span>Personalizar en tiempo real</span>
+                </li>
+                <li class="flex items-center space-x-4">
+                  <div
+                    class="size-5 rounded-full bg-amber-900/30 flex items-center justify-center flex-shrink-0 mt-0.5"
+                  >
+                    <span class="text-amber-400 text-xs">•</span>
+                  </div>
+                  <span>Automatizar tareas</span>
+                </li>
+                <li class="flex items-center space-x-4">
+                  <div
+                    class="size-5 rounded-full bg-amber-900/30 flex items-center justify-center flex-shrink-0 mt-0.5"
+                  >
+                    <span class="text-amber-400 text-xs">•</span>
+                  </div>
+                  <span>Multiplicar la contactabilidad</span>
+                </li>
+              </ul>
+            </div>
+          </article>
+        </div>
+        <!-- slide 3-->
+        <div class="swiper-slide">
+          <article
+            class="text-white-xkale w-full rounded-xl overflow-hidden bg-black-xkale/15 backdrop-blur-md h-full"
+          >
+            <div class="bg-gradient-to-t from-blue-600 to-blue-700 px-4 py-2">
+              <div class="flex items-center space-x-4">
+                <Zap class="size-5" />
+                <h3 class="mb-1">Giro</h3>
+              </div>
+            </div>
+            <div class="p-4">
+              <div class="mb-4 bg-blue-900/20 px-4 py-2 rounded-xl">
+                <p class="mb-0 text-blue-400">
+                  Pero hay una forma de ponerte al frente.
+                </p>
+              </div>
+              <p>
+                Un evento creado específicamente para líderes de CX, canales y
+                operaciones en México que quieren resultados reales y medibles.
+              </p>
+            </div>
+          </article>
+        </div>
+        <!-- slide 4-->
+        <div class="swiper-slide">
+          <article
+            class="text-white-xkale w-full rounded-xl overflow-hidden bg-black-xkale/15 backdrop-blur-md h-full"
+          >
+            <div class="bg-gradient-to-r from-green-600 to-green-700 px-4 py-2">
+              <div class="flex items-center space-x-4">
+                <PieChart class="size-5" />
+                <h3 class="mb-1">La solución: XKALE SESSIONS</h3>
+              </div>
+            </div>
+            <div class="p-4">
+              <div class="p-4 bg-green-900/20 text-green-400 rounded-xl mb-4">
+                <p class="mb-0">
+                  🎯 XKALE SESSIONS: CX e Inteligencia Artificial en México
+                </p>
+              </div>
+              <p>Descubrí cómo transformar tu operación con:</p>
+              <ul class="space-y-4">
+                <li class="flex items-center space-x-4">
+                  <div
+                    class="size-5 rounded-full p-1 bg-green-900/30 flex items-center justify-center flex-shrink-0 mt-0.5"
+                  >
+                    <CheckRegular class="size-5 text-green-400" />
+                  </div>
+                  <span>IA aplicada</span>
+                </li>
+                <li class="flex items-center space-x-4">
+                  <div
+                    class="size-5 rounded-full p-1 bg-green-900/30 flex items-center justify-center flex-shrink-0 mt-0.5"
+                  >
+                    <CheckRegular class="size-5 text-green-400" />
+                  </div>
+                  <span>Orquestación multicanal</span>
+                </li>
+                <li class="flex items-center space-x-4">
+                  <div
+                    class="size-5 rounded-full p-1 bg-green-900/30 flex items-center justify-center flex-shrink-0 mt-0.5"
+                  >
+                    <CheckRegular class="size-5 text-green-400" />
+                  </div>
+                  <span>Casos reales de éxito en LATAM</span>
+                </li>
+              </ul>
+            </div>
+          </article>
+        </div>
+        <!-- slide 5-->
+        <div class="swiper-slide">
+          <article
+            class="text-white-xkale w-full rounded-xl overflow-hidden bg-black-xkale/15 backdrop-blur-md h-full"
+          >
+            <div
+              class="px-4 py-2 bg-gradient-to-r from-indigo-600 to-indigo-700"
+            >
+              <div class="flex items-center space-x-4">
+                <Calendar class="size-5" />
+                <h3 class="mb-1">info del Evento</h3>
+              </div>
+            </div>
+            <div class="p-4">
+              <ul class="space-y-4">
+                <li class="flex items-center space-x-4">
+                  <Calendar class="size-4 text-indigo-600" />
+                  <span>7 de mayo 2025</span>
+                </li>
+                <li class="flex items-center space-x-4">
+                  <Time class="size-4 text-indigo-600" />
+                  <span>6:00 PM (MX) | 7:00 PM (EC)</span>
+                </li>
+                <li class="flex items-center space-x-4">
+                  <Youtube class="size-4 fill-indigo-600" />
+                  <span>Formato: En vivo por YouTube</span>
+                </li>
+                <li class="flex items-center space-x-4">
+                  <Micro class="size-4 text-indigo-600" />
+                  <span>Con expertos de Genesys y Xkale</span>
+                </li>
+                <li class="flex items-center space-x-4">
+                  <Lock class="size-4 text-indigo-600" />
+                  <span>Evento gratuito pero con cupos limitados</span>
+                </li>
+              </ul>
+            </div>
+          </article>
+        </div>
+        <!-- slide 6-->
+      </div>
+      <!-- If we need pagination -->
+      <div class="swiper-pagination"></div>
+      <!-- If we need navigation buttons -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+      <!-- If we need scrollbar -->
+      <div class="swiper-scrollbar"></div>
+    </div>
+    <div class="">
+      <article
+        class="text-white-xkale bg-black-xkale/15 backdrop-blur-md w-full rounded-xl overflow-hidden h-full"
+      >
+        <div class="bg-gradient-to-r from-rose-600 to-rose-700 px-4 py-2">
+          <div class="flex items-center space-x-4">
+            <Tiket class="size-5" />
+            <h3 class="mb-1">Reservá tu lugar</h3>
+          </div>
+        </div>
+        <div class="p-4">
+          <p>
+            🎟️ Reservá tu lugar ahora y empezá a transformar tu contact center.
+          </p>
+          <p>👇 Te mandamos el enlace privado al registrarte</p>
+          <a
+            href="/#form"
+            class="bg-rose-800 text-white-xkale p-5 flex justify-center px-4 py-2 rounded-xl w-full text-center"
+            >Reservar mi lugar
+          </a>
+        </div>
+      </article>
+    </div>
+  </div>
+</Section>
+
+<style>
+  .swiper {
+    width: 20rem;
+    @media (min-width: 1024px) {
+      width: 100%;
+      height: 25rem;
+    }
+  }
+
+  .swiper-wrapper {
+    width: 100%;
+    height: 25rem;
+  }
+
+  .swiper-slide {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-info .swiper-button-prev,
+  .swiper-info .swiper-button-next {
+    --swiper-navigation-size: 1.5rem;
+    color: var(--color-white-xkale);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+
+  .swiper-info:hover .swiper-button-prev,
+  .swiper-info:hover .swiper-button-next {
+    opacity: 1;
+    transition: opacity 0.3s ease;
+  }
+
+  .swiper-info .swiper-pagination {
+    --swiper-pagination-color: var(--color-white-xkale);
+    --swiper-pagination-bottom: 8px;
+    --swiper-pagination-progressbar-bg-color: rgba(0, 0, 0, 0.25);
+    --swiper-pagination-bullet-size: 6px;
+    --swiper-pagination-bullet-inactive-color: #000;
+    --swiper-pagination-bullet-inactive-opacity: 0.25;
+    --swiper-pagination-bullet-opacity: 1;
+    --swiper-pagination-bullet-horizontal-gap: 2px;
+  }
+</style>
+
+<script type="module">
+  const swiper = new Swiper(".swiper-info", {
+    // Optional parameters
+    direction: "horizontal",
+    loop: true,
+    autoplay: {
+      delay: 5000,
+      pauseOnMouseEnter: true,
+      disableOnInteraction: false,
+    },
+
+    // If we need pagination
+    pagination: {
+      el: ".swiper-pagination",
+    },
+
+    // Navigation arrows
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+
+    // And if we need scrollbar
+
+    breakpoints: {
+      // when window width is >= 320px
+      320: {
+        slidesPerView: 1,
+        spaceBetween: 20,
+      },
+      // when window width is >= 480px
+      480: {
+        slidesPerView: 1,
+        spaceBetween: 30,
+      },
+      // when window width is >= 640px
+      640: {
+        slidesPerView: 1,
+        spaceBetween: 20,
+      },
+      // when window width is >= 1024px
+      1024: {
+        slidesPerView: 1,
+        spaceBetween: 20,
+      },
+    },
+  });
+</script>

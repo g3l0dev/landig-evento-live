@@ -1,0 +1,74 @@
+---
+import Layout from "@layouts/Layout.astro";
+import CheckCircle from "@assets/icons/check-circle.svg";
+---
+
+<Layout>
+  <div
+    class="min-h-screen flex flex-col items-center justify-center text-white px-4 py-16"
+  >
+    <div class="max-w-3xl mx-auto text-center">
+      <!-- <div class="mb-10">
+        <Image
+          src="/xkale-logo.png"
+          alt="XKALE"
+          width={150}
+          height={50}
+          class="mx-auto mb-6"
+        />
+      </div> -->
+
+      <div
+        class="bg-black/50 backdrop-blur-sm p-8 rounded-xl border border-gray-800"
+      >
+        <div class="flex justify-center mb-6">
+          <CheckCircle class="text-verde-xkale h-16 w-16" />
+        </div>
+
+        <p class="text-white mb-4">
+          Acabas de dar un paso que muchos siguen posponiendo: enfrentar el
+          problema de la contactabilidad.
+        </p>
+
+        <h1 class="text-4xl mb-4 text-verde-xkale">
+          Gracias por registrarte a XKALE SESSIONS.
+        </h1>
+
+        <div class="my-8 border-t border-gray-700 pt-8">
+          <p class="text-lg mb-6">
+            Esto no es un evento más. Es una sesión pensada para quienes quieren
+            entender lo que realmente está afectando su operación... y hacer
+            algo al respecto.
+          </p>
+
+          <p class="text-lg flex items-center justify-center gap-2 mb-2">
+            <span class="text-verde-xkale text-2xl">📩</span>
+            En breve recibirás un correo con todos los detalles.
+          </p>
+
+          <p class="text-sm text-gray-400">
+            Revisa tu bandeja de entrada (y el spam, por si acaso).
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</Layout>
+
+<script>
+  // Redirect to home page after 10 seconds
+  setTimeout(() => {
+    window.location.href = "/";
+  }, 1000); // 10000 milliseconds = 10 seconds
+
+  // Optional: Add a countdown display
+  const startTime = 10;
+  let timeLeft = startTime;
+
+  const countdownInterval = setInterval(() => {
+    timeLeft--;
+    if (timeLeft <= 0) {
+      clearInterval(countdownInterval);
+    }
+  }, 1000);
+</script>

@@ -1,14 +1,28 @@
 ---
-import BaseLayout from "@layouts/BaseLayout.astro";
-import { Unete, EsteEvento, LideresEnCx, Testimonios, Form } from "src/section";
+import Details from "@components/ui/index/Details.astro";
+import Hero from "@components/ui/index/Hero.astro";
+import InfoEvent from "@components/ui/index/InfoEvent.astro";
+import InfoMain from "@components/ui/index/InfoMain.astro";
+import Speakers from "@components/ui/index/Speakers.astro";
+import SlideInfo from "@components/ui/index/SlideInfo.astro";
+import Testimony from "@components/ui/index/Testimony.astro";
+import Form from "@components/ui/index/Form.astro";
+import Layout from "@layouts/Layout.astro";
 ---
 
-<BaseLayout
-  title="cx con ia"
-  description="Descubre cómo la IA puede mejorar la experiencia del cliente en tu contact center">
-  <Unete/>
-  <EsteEvento/>
-  <LideresEnCx/>
-  <Testimonios/>
-  <Form/>
-</BaseLayout>
+<Layout
+  title="Xkale Sessions"
+  description="Transforma la experiencia de tu contact center con IA y la orquestación de canales. Aprende de expertos y lleva tus operaciones a la máxima productividad."
+  image="xkale-sesions.png"
+>
+  <main>
+    <Hero />
+    <Speakers />
+    <InfoMain />
+    <InfoEvent />
+    <SlideInfo />
+    <Details />
+    <Testimony />
+    <Form />
+  </main>
+</Layout>

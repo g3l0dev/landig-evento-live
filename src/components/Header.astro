@@ -1,77 +1,11 @@
 ---
-import LiveDay from "./LiveDay.astro";
+import LogoXkale from "@assets/logo-xkale.svg";
 ---
 
-<style>
-  header {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 1.25rem;
-    padding: 1rem;
-    color: white;
-  }
-  header a {
-    color: white;
-    text-wrap: pretty;
-    font-size: 1rem;
-    padding: 0.5rem 1rem;
-    border-radius: 0.5rem;
-    background-color: var(--verde-planta);
-    max-width: max-content;
-  }
-  p {
-    display: block;
-    margin-block: 1em;
-  }
-  h1 {
-    font-size: 2em;
-    margin-block: 0.67em;
-    display: block;
-    font-weight: bold;
-    color: var(--verde-planta);
-    text-wrap: balance;
-    line-height: 1.4em;
-  }
-  @media (width >= 1280px) {
-    header {
-      padding-inline: 8rem;
-      padding-block: 2rem;
-    }
-  }
-  @media (width >= 1546px) {
-    header {
-      padding-inline: 18rem;
-      padding-block: 2rem;
-    }
-  }
-  img {
-    width: auto;
-    height: 9rem;
-  }
-  .tag-line {
-    margin-block: 1rem;
-  }
-</style>
-
 <header>
-  <div>
-    <div>
-      <img src="/images/xkale-session.webp" alt="Logo de Xkale" />
-      <span class="tag-line"><strong>Innovación hoy, para impulsar el mañana</strong></span>
-    </div>
-    <h1>Transforma la experiencia de cliente en tu contact center en México</h1>
-    <p>
-      Conoce estrategias innovadoras para desafiar la baja contactabilidad en
-      contact centers y BPO's, impulsando tus resultados operativos con la ayuda
-      de la IA y soluciones integrales de CX.
-    </p>
-    <LiveDay />
-
-    <a href="#form">Inscribirse ahora</a>
-  </div>
-  <div>
-    <div class="_form_16"></div><script
-      src="https://xkale.activehosted.com/f/embed.php?id=16"
-      charset="utf-8"></script>
+  <div
+    class="container h-full p-4 mx-auto sm:px-6 sm:py-8 md:px-8 lg:px-20 xl:px-32 2xl:px-48 typography"
+  >
+    <LogoXkale class="h-[4rem] fill-verde-xkale" />
   </div>
 </header>

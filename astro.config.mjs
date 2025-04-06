@@ -1,11 +1,20 @@
-import { defineConfig } from "astro/config";
+import { defineConfig } from 'astro/config';
 
-import icon from "astro-icon";
+import tailwindcss from '@tailwindcss/vite';
 
+import sitemap from '@astrojs/sitemap';
+
+// https://astro.build/config
 export default defineConfig({
-  devToolbar: {
-    enabled: false,
+  vite: {
+    plugins: [tailwindcss()]
   },
 
-  integrations: [icon()],
+  experimental: {
+    svg: {
+      mode: 'sprite'
+    }
+  },
+  site: 'https://xkalesessions.xkale.com/',
+  integrations: [sitemap()]
 });

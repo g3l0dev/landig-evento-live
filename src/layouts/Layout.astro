@@ -1,0 +1,73 @@
+---
+import Footer from "@components/Footer.astro";
+import "../styles/global.css";
+// Supports weights 100-900
+import "@fontsource-variable/public-sans";
+
+interface Props {
+  title?: string;
+  description?: string;
+  image?: string;
+}
+
+const { title, description, image } = Astro.props;
+const CanonicalURL = new URL(Astro.url.pathname, Astro.site);
+---
+
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{title}</title>
+    <link rel="icon" type="ico" href="/favicon.ico" />
+    <link rel="sitemap" href="/sitemap-index.xml" />
+    <link rel="canonical" href={CanonicalURL} />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.css"
+      integrity="sha512-pmAAV1X4Nh5jA9m+jcvwJXFQvCBi3T17aZ1KWkqXr7g/O2YMvO8rfaa5ETWDuBvRq6fbDjlw4jHL44jNTScaKg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <meta name="description" content={description} />
+
+    <!-- og -->
+    <meta property="og:url" content={CanonicalURL} />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta
+      property="og:image"
+      content={`https://xkalesessions.xkale.com/${image}`}
+    />
+    <meta property="og:locale" content="es_ES" />
+    <meta property="og:site_name" content={description} />
+    <meta property="og:image:alt" content={title} />
+    <!--
+      <meta
+      property="og:image:width"
+      content="1200"
+    />
+    <meta property="og:image:height" content="627" /> -->
+
+    <!-- twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@xkale" />
+    <meta name="twitter:creator" content="@xkale" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+  </head>
+  <body
+    class="bg-[url('/images/header1.avif')] bg-no-repeat bg-fixed bg-cover bg-center grid grid-rows-[auto_1fr_auto] h-dvh"
+  >
+    <slot />
+
+    <Footer />
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.js"
+      integrity="sha512-hRhHH3+D9xVKPpodEiYzHWIG8CWbCjp7LCdZ00K3/6xsdC3iT0OlPJLIwxSMEl07gya1Ae8iAqXjMMLpzqqh0w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"></script>
+  </body>
+</html>
